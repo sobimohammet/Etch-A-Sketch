@@ -69,7 +69,7 @@ function grids(rows) {
         boardContainer.appendChild(grid);
         grid.addEventListener('click', () => {
             /* let currentColor = chooseColor.value; */
-            range.addEventListener('click', () => {
+            range.addEventListener('change', () => {
                 grid.style.cssText = `background: rgb(189, 180, 169);`;
             })
             clear.addEventListener('click', () => {
