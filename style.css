@@ -45,3 +45,10 @@ footer {
     padding: 2vw;
     width: 100%;
 }
+a {
+    text-decoration: none;
+    color: rgb(14, 201, 70);
+}
+a:hover {
+    text-decoration: underline;
+}

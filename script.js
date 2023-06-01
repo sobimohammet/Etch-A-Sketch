@@ -96,7 +96,7 @@ function grids(rows) {
 //to choose board population option
 rows = range.value;
 grids(rows);
-range.addEventListener('click', () => {
+range.addEventListener('change', () => {
     rows = range.value;
     grids(rows);
 })
@@ -117,6 +117,11 @@ function randomColor() {
 
 let footer = document.createElement('footer');
 body.appendChild(footer);
+
+let sourceLink = document.createElement('a');
+sourceLink.setAttribute('href', 'https://github.com/sobimohammet/Etch-A-Sketch');
+sourceLink.textContent = 'Souce Code from Github';
+footer.appendChild(sourceLink);
 
 let footerFisrtChild = document.createElement('div');
 footerFisrtChild.setAttribute('class', 'author');
